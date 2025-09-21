@@ -4,9 +4,13 @@
   "description": "WeatherVibe - Premium Weather Experience Frontend",
   "main": "index.html",
   "scripts": {
+    "start": "npx http-server -p $PORT -c-1",
     "build": "echo 'Static site - no build needed'"
   },
-  "keywords": ["weather", "city", "frontend", "vanilla-js", "responsive", "vercel"],
+  "keywords": ["weather", "city", "frontend", "vanilla-js", "responsive", "railway"],
   "author": "Vineeth",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
 }
