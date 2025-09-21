@@ -1,16 +1,17 @@
 {
-  "name": "weather-city-hub-frontend",
+  "name": "weathervibe-frontend",
   "version": "1.0.0",
-  "description": "Frontend for Weather & City Info Hub",
+  "description": "WeatherVibe - Premium Weather Experience Frontend",
   "main": "index.html",
   "scripts": {
     "start": "npx http-server -p 8000 -c-1",
     "dev": "npx live-server --port=8000 --no-browser",
     "build": "echo 'No build step needed for vanilla JS'",
-    "test": "echo 'Add tests here'"
+    "test": "echo 'Add tests here'",
+    "vercel-build": "echo 'Static site - no build needed'"
   },
-  "keywords": ["weather", "city", "frontend", "vanilla-js", "responsive"],
-  "author": "Your Name",
+  "keywords": ["weather", "city", "frontend", "vanilla-js", "responsive", "vercel"],
+  "author": "Vineeth",
   "license": "MIT",
   "devDependencies": {
     "http-server": "^14.1.1",
