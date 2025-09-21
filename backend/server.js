@@ -359,7 +359,7 @@ app.use((error, req, res, next) => {
     console.error('Unhandled error:', error);
     res.status(500).json({
         error: 'Internal server error',
-        message: process.env.NODE_ENV === 'development' ? error.message : 'Something went wrong'
+        message: process.env.ENVIRONMENT === 'development' ? error.message : 'Something went wrong'
     });
 });
 
@@ -381,7 +381,7 @@ app.use('*', (req, res) => {
 // Start server
 app.listen(PORT, () => {
     console.log(`🚀 Weather & City Info Hub Backend running on port ${PORT}`);
-    console.log(`📊 Environment: ${process.env.NODE_ENV || 'development'}`);
+    console.log(`📊 Environment: ${process.env.ENVIRONMENT || 'development'}`);
     console.log(`💾 Cache TTL: ${process.env.CACHE_TTL || 300} seconds`);
     
     // Validate API keys on startup
