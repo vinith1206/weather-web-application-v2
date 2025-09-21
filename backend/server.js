@@ -39,11 +39,11 @@ const API_CONFIG = {
         baseUrl: process.env.OPENWEATHER_BASE_URL || 'https://api.openweathermap.org/data/2.5'
     },
     unsplash: {
-        key: process.env.UNSPLASH_ACCESS_KEY,
+        key: process.env.UNSPLASH_ACCESS_KEY || 'kYeRz4fMM2T6uLy2iSdlE4ibaIUmx4-pU9n7F5LbkLg',
         baseUrl: process.env.UNSPLASH_BASE_URL || 'https://api.unsplash.com'
     },
     geodb: {
-        key: process.env.GEODB_API_KEY,
+        key: process.env.GEODB_API_KEY || 'f685a7c2cemsh8a5c4259d22d911p1faebajsnca1bb83b3a52',
         baseUrl: process.env.GEODB_BASE_URL || 'https://wft-geo-db.p.rapidapi.com/v1'
     }
 };
