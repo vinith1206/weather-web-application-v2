@@ -35,7 +35,7 @@ app.use(express.json()); // Parse JSON bodies
 // API Configuration
 const API_CONFIG = {
     openweather: {
-        key: process.env.OPENWEATHER_API_KEY,
+        key: process.env.OPENWEATHER_API_KEY || '228f245028848493f6bea85b96a9edcd',
         baseUrl: process.env.OPENWEATHER_BASE_URL || 'https://api.openweathermap.org/data/2.5'
     },
     unsplash: {
