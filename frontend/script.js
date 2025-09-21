@@ -15,7 +15,7 @@
  */
 
 // API Configuration
-const API_BASE_URL = process.env.API_URL || 'http://localhost:3001/api';
+const API_BASE_URL = 'https://weather-web-application-v2-r42a.vercel.app/api';
 
 // DOM Elements - will be populated in init()
 let elements = {};
